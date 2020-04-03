@@ -3,25 +3,53 @@
 ***********************************************************************jchotel
 
 DAY00 :
-	- EX00 : mégaphone,  done
-	- EX01 : phonebook,  done
+	- EX00 : mégaphone,  		done
+	- EX01 : phonebook,  		done
 DAY01 :
-	- EX00 : pony,	      done
+	- EX00 : pony,	      		done
 	- EX01 : leaks can’t be tested on my computer : http://www.cplusplus.com/forum/beginner/45077/
-	- EX02 : save on heap or stack, how to choose & random working bizarre
-	- EXO3 : random working bizarre, how to delete
-	- EX04 : brain,      done
-	- EX05 : brain2,     done
-	- EXO6 : violence,   done
-	- EX07 : replace,    done
-	- EX08 : attacks,    done
-	- EXO9 : logger,     done
-	- EX10 : cato9tails, done
+	- EX02 : save on heap or stack, how to choose & random working weird
+	- EXO3 : random working weird, how to delete
+	- EX04 : brain,      		done
+	- EX05 : brain2,     		done
+	- EXO6 : violence,   		done
+	- EX07 : replace,    		done
+	- EX08 : attacks,    		done
+	- EXO9 : logger,     		done
+	- EX10 : cato9tails, 		done
 DAY02 :
-	- EX00 : fixed
-	- EX01 : 
-	- EX02
+	- EX00 : fixed - int 		done
+	- EX01 : fixed - float 	done
+	- EX02 : fixed - ope 		done
 	- EX03 : eval_expr	 https://www.geeksforgeeks.org/extract-integers-string-c/
+DAY03 :
+	- EX00 : hitPoint useless & 5 attacks 	to finish
+	- EX01 : new class
+	- EX02 : heritage
+	- EX03 : new heritage
+	- EX04 : heritage double
+	/!\ revoir la gestion de armor reduction & quotes
+DAY04 :
+	- EX00 : sorcerer		done
+	- EXO1 : attacks		verify the = 0
+	- EX02 : 
+	/!\ à la forme Coplienne
+	/!\ comment est ce qu’on protege une instance non initialisée ?
+
+DAY05 :
+	- EX00 : bureaucrat	done
+	- EX01 : form			how to put an attribut to const ? 
+	- EX02 : specific forms	use day01/ex09
+	- EX03 : intern
+	- EX04 : office			comment faire une catégorie d’execption ?
+DAY06 :
+	- EX00 : cast		done
+	- EX01 :
+	- EX02 :
+DAY07 :
+	- EX00 : template
+	- EX01 : iter
+	- EX02 : class template : pbm de abort a la fin…
 
 
 
@@ -36,8 +64,12 @@ GENERAL INFOS ----------------------------------------------------------------
 		- 2.5 != 2.50 != 2.59
 	- integer lack precision : 2 + 1 = 3 but 5 % 2 = 4 % 2 = 2.
 	- float lack precision : 2.0 != 2
+. OVERRIDE ...................................................................
+	- pour override une method il faut la passer en virtual dans les deux classes 
 
 CORRECTIONS TEST -------------------------------------------------------------
 	- vérifier tous les noms de fichier rendu (.h ou .hpp)
 	- vérifier les headers
+	- pour tester day04/ex02 : getUnit(nb out of range)
+	- pour day04/ex03 : pour createMaterial, il faut qu’il soit défini dans les learnedMaterial pour être créé. il ne suffit pas de créer une nouvelle instance, il faut cloner ! sinon pas d’interet…
 
