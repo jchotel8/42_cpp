@@ -10,22 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cctype>
-#include <string>
 #include <iostream>
 
 int main(int ac, char *av[])
 {
-	int i;
-	int j;
+	int i = -1;
+	int j = 0;
+
 	if (ac == 1)
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-	for (j = 1; j < ac; j++)
+	while(av[++j])
 	{
-		for (i = 0; i < strlen(av[j]); i++)
+		while(av[j][++i])
 		{
-			std::cout << (char)toupper(av[j][i]);
-   		}
+			if (av[j][i] >= 'a' && av[j][i] <= 'z')
+				std::cout << (char)(av[j][i] - 32);
+			else
+				std::cout << av[j][i];
+		}
+		i = -1;
    	}
    	std::cout << std::endl;
 	return 0;

@@ -10,12 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.h"
-
-
-Contact::Contact()
-{
-}
+#include "phonebook.hpp"
 
 Contact::Contact(std::string data[11])
 {
@@ -23,6 +18,10 @@ Contact::Contact(std::string data[11])
 	{
 		m_data[j] = data[j];
 	}
+}
+
+Contact::Contact()
+{
 }
 
 void Contact::set_data(std::string new_field, int i)
@@ -45,7 +44,7 @@ void Contact::display_contact()
 {
 	for (int j = 0; j < 11; j++)
 	{
-		std::cout << m_field[j] << ": " << m_data[j] << std::endl;
+		std::cout << BOLDWHITE << m_field[j] << RESET << ": " << m_data[j] << std::endl;
 	}
 }
 
