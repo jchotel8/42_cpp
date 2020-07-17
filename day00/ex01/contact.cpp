@@ -50,8 +50,13 @@ void Contact::display_contact()
 
 void Contact::display_field(std::string field)
 {
-	if (field.size() > 10)
-		std::cout << std::setw(9) << std::setfill('.') << field;
+	int i = -1;
+   	if (field.length() > 10)
+	{
+		while (++i < 9)
+			std::cout << field[i];
+		std::cout << ".";
+	}
 	else
 		std::cout << std::setw(10) << std::right << std::setfill(' ') << field;
 	std::cout << "|";
